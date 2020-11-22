@@ -10,44 +10,81 @@
 <body>
 
     <nav>
-        <img src="img/black-png-no-outline125x200.png" alt="Logo, bold letters 'LDD'."/>
-        <span>Organized, Efficent, Driven</span>
         <ul>
-            <li>Home</li>
-            <li>Featured Work</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><img id="navLogo" src="img/ldd-new1.png" alt="Logo, bold letters 'LDD'."/></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <p id="slogan">Organized, Efficent, Driven</p>
     </nav>
 
     <main>
 
         <div id="home">
-            <img />
-            <p></p>
+            <img src="img/loganportfolio.jpg" alt="Picture of Logan" id="profilepic" />
+            <p id="summarytext">Hi! I've been learning to program and develop web pages for the last couple of years. ADD MORE TEXT HERE, AT LEAST TWO MORE SENTENCES.</p>
 
-            <span>see some of my work below</span>
-            <button></button>
+            <button id="calltoaction">See my work!</button>
+            
         </div>
 
-        <div id="featured">
-            <div class="featuredwork">
-                <img />
-                <button></button>
+        <Section id="featured">
+            <h1>Featured Work</h1>
+            <button class="nextwork leftside" onclick="plusDivs(-1)">&#10094</button>
+            <button class="nextwork rightside" onclick="plusDivs(1)">&#10095</button>
+            <div class="featuredwrapper">
+                <div class="featuredwork">
+                    <img class="featuredimg" src="img/screens/imggallery.jpg" alt="Screenshot of a the image gallery website."/>
+                    <h2 class="projectHeading">Online Image Gallery</h2>
+                    <p class="projectInfo">A straightforward website that allows users to register and upload to a private image gallery. Images can be removed or uploaded with a couple easy clicks. </p>
+                    <ul class="projectTools">
+                        <li class="toolItem">PHP</li>
+                        <li class="toolItem">JS</li>
+                        <li class="toolItem">Bootstrap</li>
+                    </ul>
+                </div>
             </div>
-            <div class="featuredwork">
-                <img />
-                <button></button>
+
+            <div class="featuredwrapper">
+                <div class="featuredwork">
+                    <img class="featuredimg" src="img/screens/roguevalley.jpg" alt="A beautiful page made entirely with css."/>
+                    <h2 class="projectHeading">Full CSS Page</h2>
+                    <p class="projectInfo">This page is done entirely through CSS. I utilized some of the amazing properties CSS has to build this page from a provided design.</p>
+                    <ul class="projectTools">
+                        <li class="toolItem">CSS</li>
+                    </ul>
+                </div>
             </div>
-            <div class="featuredwork">
-                <img />
-                <button></button>
+
+            <div class="featuredwrapper">
+                <div class="featuredwork">
+                    <img class="featuredimg" src="img/screens/nyt.jpg" alt="Screenshot of the NYT api website."/>
+                    <h2 class="projectHeading">New York Times API</h2>
+                    <p class="projectInfo">This website uses an api call to the New York Times news site, then uses JavaScript to sort and the data. The data is displayed in a straightforward and organized way.</p>
+                    <ul class="projectTools">
+                        <li class="toolItem">PHP</li>
+                        <li class="toolItem">JS</li>
+                        <li class="toolItem">Bootstrap</li>
+                    </ul>
+                </div>
             </div>
-            <div class="featuredwork">
-                <img />
-                <button></button>
+
+            <div class="featuredwrapper">
+                <div class="featuredwork">
+                    <img class="featuredimg" src="img/screens/org.jpg" alt="Showcasing the front page of Org Review"/>
+                    <h2 class="projectHeading">Org Review - User Review Site</h2>
+                    <p class="projectInfo">This website uses an api call to the New York Times news site, then uses JavaScript to sort and the data. The data is displayed in a straightforward and organized way.</p>
+                    <ul class="projectTools">
+                        <li class="toolItem">PHP</li>
+                        <li class="toolItem">JS</li>
+                        <li class="toolItem">Bootstrap</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            
+        </Section>
 
         <div id="about">
             <p>Info about me here</p>
@@ -55,18 +92,45 @@
                 <ul>Languages/Frameworks</ul>
                     <li>PHP</li>
                     <li>.NET</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>ReactJS</li>
+                    <li>SQL</li>
                 <ul>Tools</ul>
                     <li>Visual Studio</li>
                     <li>Trello</li>
+                    <li>phpMyAdmin</li>
+                    <li>Figma</li>
+                    <li>WordPress</li>
+                    <li>SSMS</li>
+                    <li>Git/Github</li>
                 <ul>Specialities</ul>
                     <li>User Experience</li>
                     <li>Planning</li>
+                    <li>Organization</li>
             </ul>
         </div>
 
         <div id="contact">
-            <form action=""></form>
-            <p> linked in info</p>
+            <div id="contactinfo">
+                <p>Information goes here</p>
+            </div>
+            <div id="formarea">
+                <form action="https://formspree.io/f/xvovqejn" method="POST">
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" name="name" required=""> <span data-field data-name>Please enter your name.</span>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required=""> <span data-field data-email>Please enter your email so I can get back to you.</span>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="mesage" rows="15" required=""></textarea> <span data-field data-message>Enter your message here.</span>
+                    
+                    <p id="formMessage"></p>
+                    <input type="submit" value="Send" id="submit">
+                </form>
+            </div>
         </div>
 
     </main>
