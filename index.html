@@ -10,8 +10,11 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
@@ -42,7 +45,7 @@
       <div class="container">
 
         <div class="logo">
-          <a href="index.html"><img src="assets/img//logo.png" alt="logo"></a>
+          <a href="index.html"><img src="assets/img/black-no-outline-600x400.png" alt="logo"></a>
         </div>
 
         <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
@@ -88,7 +91,7 @@
           <div class="col-lg-4 ">
             <div class="div-img-bg">
               <div class="about-img">
-                <img src="assets/img/me.jpg" class="img-responsive" alt="me">
+                <img src="assets/img/loganportfolio.png" class="img-responsive" alt="me">
               </div>
             </div>
           </div>
@@ -115,14 +118,14 @@
           <div class="services-block">
 
             <i class="ion-ios-browsers-outline"></i>
-            <span>Front End</span>
-            <p class="separator">Experienced in HTML, CSS, JavaScript, and ReactJS.</p>
+            <span>Programming Languages</span>
+            <p class="separator">PHP, Python, C#, .NET, HTML, CSS, JavaScript, and ReactJS.</p>
 
           </div>
 
           <div class="services-block">
 
-            <i class="ion-server-outline"></i>
+            <i class="ion-ios-analytics-outline"></i>
             <span>Database</span>
             <p class="separator">Well versed in phpMyAdmin, SQL, SSMS. Database integration in Visual Studio</p>
 
@@ -130,23 +133,15 @@
 
           <div class="services-block">
 
-            <i class="ion-globe-outline"></i>
-            <span>Back End</span>
-            <p class="separator">PHP, Python, C#, .NET</p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-social-code-outline"></i>
-            <span>Programming and Design Tools</span>
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>Development Tools</span>
             <p class="separator">Visual Studio, Visual Studio Code, Figma, Git/GitHub</p>
 
           </div>
 
           <div class="services-block">
 
-            <i class="ion-finger-print-outline"></i>
+            <i class="ion-ios-color-wand-outline"></i>
             <span>Specialities</span>
             <p class="separator">User Experience, Planning, Organization, Client Feedback</p>
 
@@ -168,17 +163,6 @@
       </div>
 
       <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
 
         <div class="row portfolio-container">
 
@@ -270,34 +254,30 @@
             </div>
 
             <div class="col-lg-6">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form action="https://formspree.io/f/xvovqejn" method="post" role="form" class="php-email-form">
                 <div class="row">
 
                   <div class="col-lg-6">
                     <div class="form-group contact-block1">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                      <div class="validate"></div>
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required=""/>
                     </div>
                   </div>
 
                   <div class="col-lg-6">
                     <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                      <div class="validate"></div>
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required=""/>
                     </div>
                   </div>
 
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                      <div class="validate"></div>
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required=""/>
                     </div>
                   </div>
 
                   <div class="col-lg-12">
                     <div class="form-group">
-                      <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                      <div class="validate"></div>
+                      <textarea class="form-control" name="message" rows="12" required="" placeholder="Message"></textarea>
                     </div>
                   </div>
 
