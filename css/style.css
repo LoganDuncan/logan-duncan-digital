@@ -86,7 +86,7 @@ nav a:hover {
 
 #featured {
     height: 100vh;
-    padding-top: 250px; /* used to clear the navbar*/
+    padding-top: 125px; /* used to clear the navbar*/
     scroll-behavior: smooth;
 }
 #featured h1 {
