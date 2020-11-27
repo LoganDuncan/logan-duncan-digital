@@ -161,9 +161,7 @@ p {
   padding-top: 140px;
 }
 
-/*--------------------------------------------------------------
-# Navbar
---------------------------------------------------------------*/
+/* #region Navbar */
 nav {
   position: fixed;
   background: #fff;
@@ -221,9 +219,14 @@ nav ul li a {
   color: #afafaf;
 }
 
-/*--------------------------------------------------------------
-# Hero
---------------------------------------------------------------*/
+.slogan {
+  display: inline;
+  padding-left: 10px;
+}
+
+/* #endregion */
+
+/* #region Hero */
 #hero {
   background: url("../img/home-bg.jpg") repeat scroll center center/cover;
   height: 100vh;
@@ -266,10 +269,9 @@ nav ul li a {
   color: #fff;
   font-size: 15px;
 }
+/* #endregion */
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
+/* #region Breadcrumbs */
 .breadcrumbs {
   padding: 120px 0 0 0;
   background-color: white;
@@ -325,10 +327,9 @@ nav ul li a {
     display: inline-block;
   }
 }
+/* #endregion */
 
-/*-----------------------------------------------------------------------------------*/
-/*  About
-/*-----------------------------------------------------------------------------------*/
+/* #region About*/
 #about {
   width: 100%;
   height: auto;
@@ -362,10 +363,9 @@ nav ul li a {
   margin-bottom: 0;
   text-align: left;
 }
+/* #endregion */
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
+/* #region Services */
 #services {
   background: #f7f7f7;
   position: relative;
@@ -428,9 +428,9 @@ nav ul li a {
   display: none;
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
+/* #endregion */
+
+/* #region Portfolio */
 #portfolio {
   position: relative;
   padding-bottom: 50px;
@@ -516,10 +516,9 @@ nav ul li a {
   opacity: 1;
   bottom: 20px;
 }
+/* #endregion */
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
+/* #region Portfolio Details Page */
 .portfolio-details {
   padding-top: 30px;
 }
@@ -603,6 +602,7 @@ nav ul li a {
     margin-top: 30px;
   }
 }
+/* #endregion */
 
 /*--------------------------------------------------------------
 # Journal
