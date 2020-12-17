@@ -12,7 +12,7 @@ body {
   background: #ffffff;
   color: #898989;
   font-family: 'Poppins', helvetica;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.02em;
@@ -35,7 +35,7 @@ h2 {
 
 h4 {
   color: #292929;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -70,8 +70,8 @@ nav ul li a {
 p {
   margin: 25px 0;
   padding: 0;
-  font-size: 15px;
-  color: #999999;
+  font-size: 17px;
+  color: #666464;
   line-height: 28px;
 }
 
@@ -668,11 +668,9 @@ nav ul li a {
   width: 100%;
 }
 
-.contact-details {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/* .contact-details {
+
+} */
 
 .contact-details li {
   padding-bottom: 10px;
@@ -817,14 +815,14 @@ nav ul li a {
   margin-left: 5px;
 }
 
-/* Commonts */
+/* Comments */
 .comments {
   background: #fff;
 }
 
 .entry-comments h6 {
   margin-right: 10px;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   font-weight: 500;
 }
@@ -872,7 +870,7 @@ nav ul li a {
   padding-left: 10%;
 }
 
-/* Commonts form */
+/* Comments form */
 .cmt {
   background: #fff;
 }
